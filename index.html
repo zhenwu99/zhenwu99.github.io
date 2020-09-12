@@ -1,0 +1,201 @@
+﻿
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<meta http-equiv="refresh" content=2;url="https://zhenwu99.gitee.io">
+    <title>Loadings</title>
+
+    
+    <style type="text/css">
+      .container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      /* Loading CSS 样式 */ 
+      
+      .roataqx-loader {
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        perspective: 800px;
+        position: relative
+      }
+      
+      .roataqx-loader > div {
+        position: absolute;
+        box-sizing: border-box;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;  
+      }
+      
+      .roataqx-loader .one {
+        left: 0%;
+        top: 0%;
+        animation: rotate-one 1s linear infinite;
+        border-bottom: 3px solid #000;
+      }
+      
+      .roataqx-loader .two {
+        right: 0%;
+        top: 0%;
+        animation: rotate-two 1s linear infinite;
+        border-right: 3px solid #000;
+      }
+      
+      .roataqx-loader .three {
+        right: 0%;
+        bottom: 0%;
+        animation: rotate-three 1s linear infinite;
+        border-top: 3px solid #000;
+      }
+      
+      @keyframes rotate-one {
+        0% {
+          transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+        }
+        100% {
+          transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+        }
+      }
+      
+      @keyframes rotate-two {
+        0% {
+          transform: rotateX(50deg) rotateY(10deg) rotateZ(0deg);
+        }
+        100% {
+          transform: rotateX(50deg) rotateY(10deg) rotateZ(360deg);
+        }
+      }
+      
+      @keyframes rotate-three {
+        0% {
+          transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+        }
+        100% {
+          transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+        }
+      }
+	          a {
+            text-decoration: none
+        }
+        a {
+            color: #515C6B;
+        }
+        .blink {
+            animation: blink 1s linear infinite;
+            -webkit-animation: blink 1s linear infinite;
+            -moz-animation: blink 1s linear infinite;
+            -ms-animation: blink 1s linear infinite;
+            -o-animation: blink 1s linear infinite;
+        }
+        @keyframes blink {
+            0% {
+                opacity: 0.2;
+            }
+            10% {
+                opacity: 0.2;
+            }
+            40% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @-webkit-keyframes blink {
+            0% {
+                opacity: 0.2;
+            }
+            10% {
+                opacity: 0.2;
+            }
+            40% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @-moz-keyframes blink {
+            0% {
+                opacity: 0.2;
+            }
+            10% {
+                opacity: 0.2;
+            }
+            40% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @-ms-keyframes blink {
+            0% {
+                opacity: 0.2;
+            }
+            10% {
+                opacity: 0.2;
+            }
+            40% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @-o-keyframes blink {
+            0% {
+                opacity: 0.2;
+            }
+            10% {
+                opacity: 0.2;
+            }
+            40% {
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Loading HTML-->
+	  <table width="100%" height="100%" cellpadding="0" cellspacing="0">
+        <tbody>
+			<tr>
+				<td valign="middle" align="center">
+					<div class="roataqx-loader">
+						<div class="one"></div>
+						<div class="two"></div>
+						<div class="three"></div>
+					</div>
+				</td>
+			</tr>
+            <tr>
+                <td valign="middle" align="center">
+					<script type="text/javascript">
+                        setTimeout("delay.style.visibility='visible'", 300);
+					</script>
+					<a href="https://zhenwu99.gitee.io" class="blink" id="delay" style="visibility:hidden">欢迎，即将重定向到<b>&nbsp我的博客&nbsp</b>,您也可以点击直接跳转...<br />Welcome, I will be redirected to Jane's blog, you can also click to jump directly...</a> 
+				</td>
+			</tr>
+		</tbody>
+	</table>
+        
+    </div>
+  </body>
+</html>
+        
